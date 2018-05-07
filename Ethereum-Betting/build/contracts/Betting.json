@@ -1,0 +1,173 @@
+{
+  "contract_name": "Betting",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getBlocktime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "sendEther",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "reward",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ac",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "myaccount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdraw",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x60606040526000805473c3eb5da9909cfc547985a93da4f65667f2a9701f600160a060020a03199182161790915560018054909116600160a060020a033016179055341561004c57600080fd5b5b5b5b61023d8061005e6000396000f3006060604052361561006a5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630501b79f81146100b25780630e29df22146100d7578063228cb733146100f157806354b7c39b146100fb57806394f712201461012a575b5b7fe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c3334604051600160a060020a03909216825260208201526040908101905180910390a15b005b34156100bd57600080fd5b6100c5610159565b60405190815260200160405180910390f35b6100c561015e565b60405190815260200160405180910390f35b6100b0610163565b005b341561010657600080fd5b61010e6101f3565b604051600160a060020a03909116815260200160405180910390f35b341561013557600080fd5b61010e610202565b604051600160a060020a03909116815260200160405180910390f35b425b90565b345b90565b60008054600160a060020a03169066b1a2bc2ec50000604051600060405180830381858888f19350505050151561019957600080fd5b6000547f884edad9ce6fa2440d8a54cc123490eb96d2768479d49ff9c7366125a942436490600160a060020a031666b1a2bc2ec50000604051600160a060020a03909216825260208201526040908101905180910390a15b565b600054600160a060020a031681565b600154600160a060020a0316815600a165627a7a7230582078353be352e79b5130b179eee20c69aabeb7a401bbf3bde1b04c95e19cf62c450029",
+  "networks": {
+    "3": {
+      "events": {
+        "0x46cb989ef9cef13e930e3b7f286225a086e716a90d63e0b7da85d310a9db0c9a": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "description",
+              "type": "string"
+            }
+          ],
+          "name": "newOraclizeQuery",
+          "type": "event"
+        },
+        "0x6497bd3a7d603cd3fc8da26f0b500e8b758f95f2c0e94789a463293e6dbce4fe": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "price",
+              "type": "string"
+            }
+          ],
+          "name": "newPriceTicker",
+          "type": "event"
+        },
+        "0xc4db019ddd899ab8c4169d2877afae028fd941bb9c752cf08f14d21924c06734": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "price",
+              "type": "uint256"
+            }
+          ],
+          "name": "newPriceTicker",
+          "type": "event"
+        },
+        "0x69ca02dd4edd7bf0a4abb9ed3b7af3f14778db5d61921c7dc7cd545266326de2": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x5cc43594c6eedb4dad53d7754e84c6b2c77b49d3",
+      "updated_at": 1506223008135
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1506224378077
+}
